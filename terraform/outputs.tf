@@ -45,3 +45,7 @@ output "env_mgr_sr_api_key_secret" {
   value = confluent_api_key.env-manager-schema-registry-api-key.secret
   sensitive = true
 }
+
+output "compute_pool_1_id" {
+  value = confluent_flink_compute_pool.compute_pool_1.id
+}

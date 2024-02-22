@@ -10,7 +10,7 @@ variable "cloud_region" {
   default = "us-east-2"
 }
 
-variable "service_account_prefix" {
+variable "resource_prefix" {
   type = string
   description = "prefix for service accounts"
   default = "fleet-mgr-"
