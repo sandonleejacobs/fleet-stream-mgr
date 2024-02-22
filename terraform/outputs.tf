@@ -25,3 +25,23 @@ output "cc_schema_registry_id" {
 output "cc_schema_registry_endpoint" {
   value = confluent_schema_registry_cluster.essentials.rest_endpoint
 }
+
+output "app_mgr_api_key_id" {
+  value = confluent_api_key.app-manager-kafka-api-key.id
+  sensitive = true
+}
+
+output "app_mgr_api_key_secret" {
+  value = confluent_api_key.app-manager-kafka-api-key.secret
+  sensitive = true
+}
+
+output "env_mgr_sr_api_key_id" {
+  value = confluent_api_key.env-manager-schema-registry-api-key.id
+  sensitive = true
+}
+
+output "env_mgr_sr_api_key_secret" {
+  value = confluent_api_key.env-manager-schema-registry-api-key.secret
+  sensitive = true
+}
