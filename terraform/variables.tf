@@ -10,10 +10,10 @@ variable "cloud_region" {
   default = "us-east-2"
 }
 
-variable "cc_prevent_destroy" {
-  type = bool
-  description = "protect from tf destroy command"
-  default = true
+variable "service_account_prefix" {
+  type = string
+  description = "prefix for service accounts"
+  default = "fleet-mgr-"
 }
 
 variable "cc_env_display_name" {
