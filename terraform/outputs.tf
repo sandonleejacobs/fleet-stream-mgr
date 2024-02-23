@@ -65,3 +65,11 @@ output "datagen_fleet_mgmt_description_id" {
 output "datagen_fleet_mgmt_description_status" {
   value = confluent_connector.fleet_mgmt_description_source.status
 }
+
+output "datagen_fleet_mgmt_sensors_id" {
+  value = confluent_connector.fleet_mgmt_sensors_source.id
+}
+
+output "datagen_fleet_mgmt_sensors_status" {
+  value = confluent_connector.fleet_mgmt_sensors_source.status
+}
