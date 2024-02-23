@@ -57,3 +57,11 @@ output "datagen_fleet_mgmt_location_id" {
 output "datagen_fleet_mgmt_location_status" {
   value = confluent_connector.fleet_mgmt_location_source.status
 }
+
+output "datagen_fleet_mgmt_description_id" {
+  value = confluent_connector.fleet_mgmt_description_source.id
+}
+
+output "datagen_fleet_mgmt_description_status" {
+  value = confluent_connector.fleet_mgmt_description_source.status
+}
