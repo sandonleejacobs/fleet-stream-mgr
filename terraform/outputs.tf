@@ -49,3 +49,11 @@ output "env_mgr_sr_api_key_secret" {
 output "compute_pool_1_id" {
   value = confluent_flink_compute_pool.compute_pool_1.id
 }
+
+output "datagen_fleet_mgmt_location_id" {
+  value = confluent_connector.fleet_mgmt_location_source.id
+}
+
+output "datagen_fleet_mgmt_location_status" {
+  value = confluent_connector.fleet_mgmt_location_source.status
+}
