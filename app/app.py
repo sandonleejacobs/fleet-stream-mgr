@@ -15,3 +15,6 @@ async def main():
         """Is this thing on?"""
     )
 
+
+# if __name__ == "__main__":
+asyncio.run(main())
