@@ -28,22 +28,22 @@ output "cc_schema_registry_endpoint" {
 
 output "app_mgr_api_key_id" {
   value = confluent_api_key.app-manager-kafka-api-key.id
-  sensitive = true
+  sensitive = false
 }
 
 output "app_mgr_api_key_secret" {
-  value = confluent_api_key.app-manager-kafka-api-key.secret
-  sensitive = true
+  value = nonsensitive(confluent_api_key.app-manager-kafka-api-key.secret)
+#   sensitive = false
 }
 
 output "env_mgr_sr_api_key_id" {
   value = confluent_api_key.env-manager-schema-registry-api-key.id
-  sensitive = true
+  sensitive = false
 }
 
 output "env_mgr_sr_api_key_secret" {
-  value = confluent_api_key.env-manager-schema-registry-api-key.secret
-  sensitive = true
+  value = nonsensitive(confluent_api_key.env-manager-schema-registry-api-key.secret)
+#   sensitive = false
 }
 
 output "compute_pool_1_id" {
